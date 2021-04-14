@@ -21,7 +21,7 @@ fn main() {
     // let mut buf = vec![0; chunk_size-1];
     // let dpath = CString::new("file1").unwrap().as_ptr();
 
-//***************read and write chunk**************succecced
+//***************read and write chunk**************succeed
     // // my_create_data(dpop, dpath as *const u8, 0, "".to_string().as_ptr(), 0);
     // my_write_at_data(dpop, dpath as *const u8, 0, 0, (&data).as_ptr(), data.len() as u32);
     // my_read_at_data(dpop, dpath as *const u8, 0, 0, (&mut buf).as_ptr() as *mut u8);
@@ -33,7 +33,7 @@ fn main() {
     // my_read_at_data(dpop, dpath as *const u8, 1, 0, buf[..20].as_ptr() as *mut u8);
     // assert_eq!(buf[10..20], data[..10]);
 
-//**************remove chunks************************succecced
+//**************remove chunks************************succeed
     // let mut buf2 = [0u8; 10];
     // for chunk_id in 0..4{
     //     // my_create_data(dpop, dpath as *const u8, chunk_id, "".to_string().as_ptr(), 0);
@@ -49,7 +49,7 @@ fn main() {
     // my_free_path(dpop, dpath as *mut u8);
     // my_fin(dpop);
 
-//****************test medatada API*******************succecced
+//****************test medatada API*******************succeed
     let mdata_path = CString::new("mdata_pool").unwrap();    
     let mdpop = my_init_mdata(mdata_path.as_ptr() as *const u8);
     let mdpath = CString::new("mdata").unwrap().as_ptr();
